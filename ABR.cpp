@@ -25,3 +25,11 @@ void Insert(int* cle, Noeud* newNoeud, Noeud* racine){
 		}
 	}
 }
+
+int max(Noeud* racine){
+	Noeud progress = racine;
+	while (progress.get_fd() != NULL) {
+		progress = progress.get_fd();
+	}
+	return progress.get_cle;
+}
