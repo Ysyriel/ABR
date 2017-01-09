@@ -58,3 +58,6 @@ bool Noeud::verification(){
 	return false;
 		
 }
+
+
+// recherche vide arrivée? si non a gauche ou a droite? appel sur les noeuds successifs
