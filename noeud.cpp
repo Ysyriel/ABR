@@ -49,4 +49,8 @@ Noeud Noeud::creation(){
 	return Noeud();
 }
 
-
+bool Noeud::verification(){
+	if (cle_==nullptr) return true;
+	return false;
+		
+}

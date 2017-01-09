@@ -18,5 +18,5 @@ class Noeud {
     void set_cle(int* cle);
 //Methodes
     Noeud creation();
-
+	bool verification();
 }; 
