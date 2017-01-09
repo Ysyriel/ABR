@@ -9,6 +9,7 @@ Noeud::Noeud(){
   cle_=nullptr;
 }
 
+/*
 Noeud::Noeud(int* cle){
   fg_=nullptr;
   fd_=nullptr;
@@ -44,6 +45,9 @@ void Noeud::set_fg(Noeud* fg) {
 void Noeud::set_cle(int* cle) {
 	cle_ = cle;
 }
+*/
+
+
 
 Noeud Noeud::creation(){
 	return Noeud();
