@@ -1,16 +1,16 @@
-all: ABR
+all: main
 
-ABR: Main.o ABR.o
+main: main.o noeud.o
 
-g++ Main.o ABR.o -o Main
+	g++ main.o noeud.o -o main
 
-Main.o: Main.cpp ABR.h
+main.o: main.cpp noeud.h
 
-g++ -c Main.cpp -o Main.o
+	g++ -c main.cpp -o main.o
 
-ABR.o: ABR.cpp ABR.h
+noeud.o: noeud.cpp noeud.h
 
-g++ -c ABR.cpp -o ABR.o
+	g++ -c noeud.cpp -o noeud.o
 
 clean:
 	rm -f *.o
