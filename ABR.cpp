@@ -33,3 +33,11 @@ int max(Noeud* racine){
 	}
 	return progress.get_cle;
 }
+
+int min(Noeud* racine){
+	Noeud progress = racine;
+	while (progress.get_fg() != NULL) {
+		progress = progress.get_fg();
+	}
+	return progress.get_cle;
+}
