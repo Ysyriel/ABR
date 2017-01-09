@@ -15,6 +15,9 @@ int main() {
   Noeud c =o.get_fd();
   int b = c.get_cle();
   cout << b << endl;
+  
+  Noeud ABR;
+  ABR.creation();     //creation d'un ABR vide avec la methode 
+  
   return EXIT_SUCCESS;
-	
 }

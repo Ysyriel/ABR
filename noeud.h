@@ -12,9 +12,11 @@ class Noeud {
 	Noeud get_fg();
 	Noeud get_fd();
 	int get_cle();
-// Setters
-  void set_fd(Noeud* fd);
-  void set_fg(Noeud* fg);
-  void set_cle(int* cle);
+//Setters
+    void set_fd(Noeud* fd);
+    void set_fg(Noeud* fg);
+    void set_cle(int* cle);
+//Methodes
+    Noeud creation();
 
 }; 

@@ -45,4 +45,8 @@ void Noeud::set_cle(int* cle) {
 	cle_ = cle;
 }
 
+Noeud Noeud::creation(){
+	return Noeud();
+}
+
 
