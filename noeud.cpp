@@ -21,4 +21,28 @@ Noeud::Noeud(Noeud* fg, Noeud* fd, int* cle){
   cle_=cle;
 }
 
+int Noeud::get_cle(){
+	return *cle_;
+}
+
+Noeud Noeud::get_fd(){
+	return *fd_;
+}
+
+Noeud Noeud::get_fg(){
+	return *fg_;
+}
+
+void Noeud::set_fd(Noeud* fd) { // &noeud en entrée
+	fd_ = fd;
+}
+
+void Noeud::set_fg(Noeud* fg) {
+	fg_ = fg;
+}
+
+void Noeud::set_cle(int* cle) {
+	cle_ = cle;
+}
+
 
